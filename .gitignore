@@ -1,3 +1,6 @@
 /out
 /.idea
 *.iml
+/Api/.idea
+/Api/target
+/Api/*.iml

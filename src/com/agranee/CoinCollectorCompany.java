@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 public class CoinCollectorCompany {
 
-    private static final Double MAX_VOLUME = 1.0;
+    private static final Double MAX_VOLUME = 32.0;
     private static Boolean isFull = false;
 
     public static void main(String[] args) {
@@ -24,7 +24,7 @@ public class CoinCollectorCompany {
         while(coinValue != -1){
             try {
                 if(!isFull) {
-                    System.out.println("Type a coin value in cents (Options: 1, 5, 10, 25, 50, 100), 0 to get all Money back or -1 to exit");
+                    System.out.println("Type a coin value in cents (Options: 1, 5, 10, 25, 50, 100), 0 to take all Money back or -1 to exit");
                 }
                 coinValue = sc.nextInt();
                 volume = calculateVolumeAndPrintValues(coinValue, volume);
@@ -33,7 +33,7 @@ public class CoinCollectorCompany {
                 System.out.print("Invalid Value. ");
             } catch(BufferOverflowException e){
                 isFull = true;
-                System.out.println("Coin Collector is full. Press 0 to get all money back");
+                System.out.println("Coin Collector is full. Press 0 to take all money back");
             }
         }
 
@@ -59,7 +59,6 @@ public class CoinCollectorCompany {
             if(volume > MAX_VOLUME){
                 throw new BufferOverflowException();
             }
-            System.out.print(volume);
         }
         return volume;
     }
