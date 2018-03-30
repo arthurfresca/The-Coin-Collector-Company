@@ -1,4 +1,13 @@
+I have done two diferents projets. 
+
+- a simple Command line application
+- the Coin Collector API using technologies like 
+  * Java 1.8
+  * Spring MVC with Spring Boot
+  * Maven
+
 # The-Coin-Collector-Company
+
 The Coin Collector Company
 
 Agrane is building a Smart Coin Jar (call it Piggy bank, if you may) .
