@@ -1,3 +1,5 @@
+# The-Coin-Collector-Company
+
 I have done two diferents projets. 
 
 - a simple Command line application
@@ -5,8 +7,9 @@ I have done two diferents projets.
   * Java 1.8
   * Spring MVC with Spring Boot
   * Maven
+  * Swagger
 
-# The-Coin-Collector-Company
+# Challenge
 
 The Coin Collector Company
 
